@@ -253,3 +253,7 @@
   `(markdown-language-keyword-face ((t (:foreground ,fg-gray-1))))
 )
 (provide-theme 'jpp-dark)
+
+(provide 'jpp-dark-theme)
+
+;; jpp-dark-theme.el ends here

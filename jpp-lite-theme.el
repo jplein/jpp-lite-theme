@@ -230,4 +230,6 @@
 )
 (provide-theme 'jpp-lite)
 
+(provide 'jpp-lite-theme)
 
+;; jpp-lite-theme.el ends here
