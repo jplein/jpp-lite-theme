@@ -23,8 +23,9 @@
 
 (defvar region-bg "#e0e0e4")
 (defvar region-fg "#000000")
-(defvar hl-bg "#f0f0f0")
-(defvar hl-fg "#000000")
+;; I can't figure out how to disable hl-line mode in doom emacs
+;; So I'm just making the face invisible
+(defvar hl-bg "#f7f7f7")
 (defvar isearch-bg "#ffff00")
 (defvar isearch-lazy-bg "#eeeeee")
 
@@ -75,7 +76,7 @@
  `(dired-flagged ((t (:background ,error-color :foreground ,bg :inherit 'bold))))
 
  ;; highlight, search, selection
- `(highlight ((t (:background ,hl-bg :foreground ,hl-fg))))
+ `(highlight ((t (:background ,hl-bg))))
  `(region ((t (:foreground ,region-fg :background ,region-bg))))
  `(isearch ((t (:foreground ,fg-bright :background ,isearch-bg))))
  `(isearch-fail ((t (:background ,error-color :foreground ,bg))))
