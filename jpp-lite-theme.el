@@ -227,7 +227,13 @@
  `(whitespace-space ((t (:inherit 'default :foreground ,whitespace-mode-fg))))
  `(whitespace-newline ((t (:inherit 'default :foreground ,whitespace-mode-fg))))
  `(whitespace-trailing ((t (:inherit 'default :foreground ,whitespace-mode-fg))))
-)
+ )
+
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
 (provide-theme 'jpp-lite)
 
 (provide 'jpp-lite-theme)
