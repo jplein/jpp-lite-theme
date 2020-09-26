@@ -23,9 +23,7 @@
 
 (defvar region-bg "#e0e0e4")
 (defvar region-fg "#000000")
-;; I can't figure out how to disable hl-line mode in doom emacs
-;; So I'm just making the face invisible
-(defvar hl-bg "#f7f7f7")
+(defvar hl-bg "#f0f0f0")
 (defvar isearch-bg "#ffff00")
 (defvar isearch-lazy-bg "#eeeeee")
 
